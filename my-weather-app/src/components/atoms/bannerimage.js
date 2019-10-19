@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class bannerimage extends Component {
-    render() {
-        return (
-            <div>
-                <img src ="">Banner Image</img>
-            </div>
-        )
-    }
+const Bannerimage = () => {
+    return (
+        <div>
+            <img src=" ">Weather city image</img>
+        </div>
+    )
 }
+
+export default Bannerimage
+
