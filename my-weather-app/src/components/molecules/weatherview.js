@@ -1,12 +1,14 @@
 import React from 'react'
-import link from '../atoms/link'
+import Link from '../atoms/Link'
+import Slider from '../atoms/Slider'
 
-const weatherview = () => {
+const Weatherview = () => {
     return (
         <div>
-            <link/>
+            <Link/>
+            <Slider/>
         </div>
     )
 }
 
-export default weatherview
+export default Weatherview
