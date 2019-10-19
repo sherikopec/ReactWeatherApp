@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class formlabel extends Component {
+export default class Formlabel extends Component {
     render() {
         return (
             <div>

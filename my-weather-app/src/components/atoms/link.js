@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class link extends Component {
+export default class Link extends Component {
     render() {
         return (
             <div>

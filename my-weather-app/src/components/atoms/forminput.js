@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class forminput extends Component {
+export default class Forminput extends Component {
     render() {
         return (
             <div>

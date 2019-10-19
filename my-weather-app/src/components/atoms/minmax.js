@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class minmax extends Component {
+export default class Minmax extends Component {
     render() {
         return (
             <div>

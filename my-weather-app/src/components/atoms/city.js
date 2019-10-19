@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class city extends Component {
+export default class City extends Component {
     render() {
         return (
             <div>

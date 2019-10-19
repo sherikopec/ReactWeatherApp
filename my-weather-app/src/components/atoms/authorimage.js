@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class authorimage extends Component {
-    render() {
-        return (
-            <div>
-                <img src="">Author profile image</img>
-            </div>
-        )
-    }
+const Authorimage = () => {
+    return (
+        <div>
+            <img src="">This is an image</img>
+        </div>
+    )
 }
+
+export default Authorimage
+
