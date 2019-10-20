@@ -1,16 +1,16 @@
 import React from 'react'
 import Day from '../atoms/Day'
-import Minmax from '../atoms/Minmax'
 import Icon from '../atoms/Icon'
+import Minmax from '../atoms/Minmax'
 
-const Dayoverview = () => {
+const Dayweather = () => {
     return (
         <div>
             <Day/>
-            <Minmax/>
             <Icon/>
+            <Minmax/>
         </div>
     )
 }
 
-export default Dayoverview
+export default Dayweather
