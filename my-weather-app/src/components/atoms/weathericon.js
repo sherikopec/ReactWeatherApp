@@ -1,11 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class Weathericon extends Component {
-    render() {
-        return (
-            <div>
-                <p>Weather Icon</p>
-            </div>
-        )
-    }
-}
+const WeatherIcon = ({ icon, ...props }) => {
+    return <div>{icon}</div>
+};
+
+export default WeatherIcon;
