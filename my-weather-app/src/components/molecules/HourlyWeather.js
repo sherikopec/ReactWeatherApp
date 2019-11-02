@@ -1,16 +1,22 @@
-import React from 'react'
-import Icon from '../atoms/Icon'
-import Temperature from '../atoms/Temperature'
-import Time from '../atoms/Time'
+// Moment.js is a JS library that makes formatting dates in JS super easy!
+// import moment from 'moment';
+import React from 'react';
+import HourlyWeatherItem from './HourlyWeatherItem';
 
-const Hourlyforecast = () => {
-    return (
-        <div>
-            <Icon/>
-            <Temperature/>
-            <Time/>
-        </div>
-    )
-}
+const HourlyWeather = ({ list, ...props }) => {
+  return (
+    <ul>
+      {list.map(item => (
+        <HourlyWeatherItem
+          key={item.dt}
+          //time={moment(item.dt).format('ha')}
+          time={item.dt}
+          icon={item.weather[0].icon}
+          maxTemp={item.main.temp_max}
+        />
+      ))}
+    </ul>
+  );
+};
 
-export default Hourlyforecast
+export default HourlyWeather;

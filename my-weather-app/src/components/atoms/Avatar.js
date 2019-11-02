@@ -1,12 +1,9 @@
-import React from 'react'
+// Author's display picture in profile
 
-const AuthorImage = ({image, ...props }) => {
-    return (
-        <div>
-            <img src="{image}"></img>
-        </div>
-    )
-}
+import React from 'react';
 
-export default AuthorImage
+const Avatar = ({ image, ...props }) => {
+  return <img src={image} alt="Weather Person Avatar" />;
+};
 
+export default Avatar;

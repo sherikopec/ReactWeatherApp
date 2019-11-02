@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Label = props => {
-    return <label>form label</label>
+  return <label>{props.children}</label>;
 };
 
 export default Label;
-

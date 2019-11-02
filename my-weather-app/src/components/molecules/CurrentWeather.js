@@ -1,13 +1,13 @@
 import React from 'react';
 import CurrentCity from '../atoms/CurrentCity';
 import CurrentTemperature from '../atoms/CurrentTemperature';
-import Link from '../atoms/Link';
+import Button from '../atoms/Button'
 
 const CurrentWeather = ({ city, temperature, onTextLinkClick, ...props }) => {
   return (
     <div>
       <CurrentCity city={city} />
-      <Link onButtonClick={onTextLinkClick}>Change City</Link>
+      <Button onButtonClick={onTextLinkClick}>Change City</Button>
       <CurrentTemperature temperature={temperature} />
     </div>
   );
