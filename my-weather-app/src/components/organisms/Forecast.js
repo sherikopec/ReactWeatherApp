@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { chunkify } from '../../utils';
 import DailyWeather from '../molecules/DailyWeather';
+import './Forecast.css'
 
 const Forecast = ({ forecast, ...props }) => {
   // Take forecast and split into equal chunks for each day.
@@ -17,15 +18,17 @@ const Forecast = ({ forecast, ...props }) => {
   const getMinTemp = array =>
     array.reduce((acc, cur) => (acc.main.temp < cur.main.temp ? acc : cur));
 
+  // const [showHourly, setShowHourly] = useState(0);
+
   return (
-    <div>
+    <div className='Forecast'>
       {chunkedForecast.map((day, i) => (
         <Fragment key={i}>
           {i === 0 && <h2>Today:</h2>}
           {i === 1 && <h2>Upcoming:</h2>}
           <DailyWeather
             key={day[0].dt}
-            date={day[0].dt}
+            date={day[0].dt_txt}
             icon={day[0].weather[0].icon}
             maxTemp={getMaxTemp(day).main.temp}
             minTemp={getMinTemp(day).main.temp}

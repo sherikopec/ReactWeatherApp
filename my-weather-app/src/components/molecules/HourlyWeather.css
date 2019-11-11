@@ -1,0 +1,7 @@
+.HourlyWeatherList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    justify-content: space-between;
+}
