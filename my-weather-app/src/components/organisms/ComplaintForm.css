@@ -1,0 +1,20 @@
+/* .ComplaintForm {
+    display: flex;
+    flex-direction: column;
+} */
+
+#myform {
+    display: flex;
+    flex-direction: column;
+}
+
+.SubmitButton {
+    display: flex;
+    justify-content: flex-end;
+    padding:20px;
+}
+
+.SubmitButton TextLink {
+    height: 35px;
+    width: 150px;
+}

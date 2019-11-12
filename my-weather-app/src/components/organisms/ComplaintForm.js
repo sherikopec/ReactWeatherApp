@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Button from '../atoms/Button';
+import TextLink from '../atoms/TextLink';
 import FormField from '../molecules/FormField';
+import './ComplaintForm.css'
+
 class ComplaintForm extends Component {
  constructor(props) {
    super(props);
@@ -48,14 +51,16 @@ class ComplaintForm extends Component {
 
  render() {
    return (
-     <>
-     <form id='myform' onSubmit={this.handleSubmit}>
-       <FormField type="text" name="name" label="Name" value={this.state.name} onChange={this.handleChange}/>
-       <FormField type="text" name="email" label="Email Address" value={this.state.email} onChange={this.handleChange} />
-       <FormField type="textarea" name="message" label="Message" value={this.state.message} onChange={this.handleChange}/>
-       <Button>Submit</Button>
-     </form>
-    </>
+     <div className='ComplaintForm'>
+        <form id='myform' onSubmit={this.handleSubmit}>
+          <FormField type="text" name="name" label="Name" value={this.state.name} onChange={this.handleChange}/>
+          <FormField type="text" name="email" label="Email Address" value={this.state.email} onChange={this.handleChange} />
+          <FormField type="textarea" name="message" label="Message" value={this.state.message} onChange={this.handleChange}/>
+          <div className='SubmitButton'>
+            <TextLink>Submit</TextLink>
+          </div>
+        </form>
+    </div>
 
    );
  }
