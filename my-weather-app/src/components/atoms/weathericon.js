@@ -1,6 +1,7 @@
 import React from 'react';
 import { WiDaySunny, WiNightClear, WiDayCloudy, WiNightAltCloudy, WiCloud, WiRain, WiShowers, WiNightAltShowers, WiNightRain, WiThunderstorm, WiNightAltThunderstorm, WiSnow, WiFog } from "react-icons/wi";
-
+import { IconContext } from 'react-icons';
+import './WeatherIcon.css'
 
 
 class WeatherIcon extends React.Component {
@@ -9,7 +10,8 @@ class WeatherIcon extends React.Component {
         super(props);
 
         this.state = {
-            icon: ''
+            icon: '',
+            iconStyle: ''
         };
     };
 
@@ -37,9 +39,9 @@ class WeatherIcon extends React.Component {
         };
         const IconCode = icons[this.props.icon];
         return (
-            <div className='WeatherIcon'>
-                <IconCode />
-            </div>
+            <IconContext.Provider value={{ className: 'WeatherIcon' }}>
+                <IconCode width={this.props.width} height="auto" />
+            </IconContext.Provider>
         )
     }
 }  

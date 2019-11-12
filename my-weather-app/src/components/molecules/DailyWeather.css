@@ -9,10 +9,13 @@
 
 .Max {
     margin-right: 10px;
+    margin-left: 10px;
+    font-size: 50px;
 }
 
 .Min {
     font-weight: lighter;
+    font-size: 50px;
 }
 
 .MinMax {

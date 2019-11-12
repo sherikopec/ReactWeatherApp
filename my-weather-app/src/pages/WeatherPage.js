@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TextLink from '../components/atoms/TextLink';
+import Button from '../components/atoms/Button';
 import Forecast from '../components/organisms/Forecast';
 import PageTemplate from '../components/templates/PageTemplate';
+import './WeatherPage.css'
 
 const WeatherPage = ({city, temperature, changeCity, forecast,...props}) => {
 
@@ -14,9 +15,12 @@ const WeatherPage = ({city, temperature, changeCity, forecast,...props}) => {
      changeCity={changeCity}
    >
      <Forecast forecast={forecast} />
-     <Link to="/complain">
-       <TextLink>Complain about the weather!</TextLink>
-     </Link>
+     <div className='ComplaintLink'>
+       <p>Don't like the weather?</p>
+        <Link to="/complain" className='ComplaintButton'>
+          <Button className='ComplainButton'>Complain to the weather person</Button>
+        </Link>
+    </div>
    </PageTemplate>
  );
 };

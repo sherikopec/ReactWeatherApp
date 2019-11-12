@@ -23,10 +23,10 @@ const Forecast = ({ forecast, ...props }) => {
   return (
     <div className='Forecast'>
       {chunkedForecast.map((day, i) => (
-        <Fragment key={i}>
+        <Fragment key={i} className='DailyWeatherContainer'>
           {i === 0 && <h2>Today:</h2>}
           {i === 1 && <h2>Upcoming:</h2>}
-          <DailyWeather
+          <DailyWeather className='DailyWeather'
             key={day[0].dt}
             date={day[0].dt_txt}
             icon={day[0].weather[0].icon}

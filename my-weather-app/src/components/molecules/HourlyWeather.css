@@ -4,4 +4,12 @@
     flex-wrap: nowrap;
     list-style-type: none;
     justify-content: space-between;
+    margin-right: 40px;
+    margin-top: 0px;
+}
+
+.HourlyWeather {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #381677;
 }
