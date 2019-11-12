@@ -1,0 +1,5 @@
+.WeatherPersonProfile {
+    display: flex;
+    padding: 10px 10px 45px 10px;
+    align-items: center;
+}

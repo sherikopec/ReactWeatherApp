@@ -18,7 +18,7 @@ const WeatherPage = ({city, temperature, changeCity, forecast,...props}) => {
      <div className='ComplaintLink'>
        <p>Don't like the weather?</p>
         <Link to="/complain" className='ComplaintButton'>
-          <Button className='ComplainButton'>Complain to the weather person</Button>
+          <Button>Complain to the weather person</Button>
         </Link>
     </div>
    </PageTemplate>

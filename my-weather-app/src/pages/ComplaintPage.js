@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TextLink from '../components/atoms/TextLink';
+import Button from '../components/atoms/Button';
 import WeatherPerson from '../components/molecules/WeatherPerson';
 import ComplaintForm from '../components/organisms/ComplaintForm';
 import PageTemplate from '../components/templates/PageTemplate';
+import './ComplaintPage.css'
 
 const ComplaintPage= ({city, temperature, changeCity,...props}) => {
  return (
@@ -12,9 +13,11 @@ const ComplaintPage= ({city, temperature, changeCity,...props}) => {
      temperature={temperature}
      changeCity={changeCity}
    >
-     <Link to="/">
-       <TextLink>I changed my mind!</TextLink>
+  <div className='BackLinkContainer'>
+     <Link to="/" className='BackLink'>
+       <Button>I regret this, take me back</Button>
      </Link>
+  </div>
 
      <WeatherPerson />
      <ComplaintForm />
