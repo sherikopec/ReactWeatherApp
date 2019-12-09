@@ -1,0 +1,12 @@
+.BackLink {
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.BackLinkContainer {
+    display: flex;
+    height:60px;
+    align-items: center;
+    justify-content: center;
+}

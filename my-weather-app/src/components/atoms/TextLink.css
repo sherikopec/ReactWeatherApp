@@ -1,0 +1,11 @@
+.TextLinkButton {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #ED61AB;
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    margin-right: 50px;
+}

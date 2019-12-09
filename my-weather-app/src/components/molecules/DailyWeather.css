@@ -1,0 +1,26 @@
+.DailyWeather {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 25px;;
+}
+
+.Max {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.Min {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.MinMax {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0;
+}
